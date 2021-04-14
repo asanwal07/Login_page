@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(25, 165, 230);
+  color: #fff;
+  font-family: "Baloo 2", cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  color: white;
+}
+.container {
+  background-color: rgb(32, 143, 235);
+  border-radius: 10px;
+  padding: 25px 30px;
+}
+.container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: rgb(232, 235, 234);
+}
+.container a {
+  text-decoration: none;
+  color: rgb(28, 5, 233);
+}
+
+a:hover {
+  color: #fff;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  background-color: rgb(60, 225, 247);
+  width: 300px;
+  padding: 10px;
+  font-size: 17px;
+  border: 0;
+  border-radius: 10px;
+}
+.btn:hover {
+  background-color: rgb(255, 251, 0);
+  /* color: white; */
+}
+.btn:active {
+  transform: scale(0.7);
+}
+.btn:focus,
+.btn:valid {
+  outline: none;
+  border: none;
+}
+.text {
+  margin-top: 30px;
+}
+.form-control {
+  position: relative;
+  margin: 21px 0 40px;
+  width: 300px;
+}
+.form-control input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 3px #fff solid;
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 15px;
+}
+input:focus,
+input:valid {
+  outline: none;
+  border-bottom-color: rgb(255, 251, 0);
+}
+.form-control label {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  pointer-events: none;
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  color: rgb(255, 251, 0);
+  transform: translateY(-30px);
+}
